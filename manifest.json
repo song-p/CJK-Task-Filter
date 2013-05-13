@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "CJK Task Filter",
+  "description": "This extension retrieve text content under certain CSS selector.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://192.168.184.223/prm/integrated/doctask/list/*"],
+      "js": ["jquery-2.0.0.js", "select.js"]
+    }
+  ]
+}
